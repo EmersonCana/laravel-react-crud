@@ -15,9 +15,13 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
-        axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-          await axios.get(url).then(function (response) {
+          await axios.get(url, {
+            headers : {
+              "Access-Control-Allow-Headers": "*",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "*"      
+            }
+          }).then(function (response) {
             setProducts(response.data)
           }).catch(function (error) {
             console.log(error)
