@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+          axios.defaults.withCredentials = true;
           await axios.get(url).then(function (response) {
             setProducts(response.data)
           }).catch(function (error) {
