@@ -15,13 +15,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-          await axios.get(url, {
-            headers : {
-              "Access-Control-Allow-Headers": "*",
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods": "*"      
-            }
-          }).then(function (response) {
+          await axios.get(url).then(function (response) {
             setProducts(response.data)
           }).catch(function (error) {
             console.log(error)
