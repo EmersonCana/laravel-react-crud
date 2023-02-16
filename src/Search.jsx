@@ -5,7 +5,7 @@ import { useState } from "react"
 const Search = () => {
     const [input, setInput] = useState('')
     const [products, setProducts] = useState([]);
-    const url = 'http://emersoncana.infinityfreeapp.com/public/api/search/'
+    const url = 'https://emersoncana.infinityfreeapp.com/public/api/search/'
 
     const getProduct = (event) => {
         setInput(event.target.value)

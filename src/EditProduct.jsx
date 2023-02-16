@@ -17,8 +17,8 @@ const EditProduct = () => {
     const {id} = useParams();
     const controller = new AbortController;
 
-    const editUrl = 'http://emersoncana.infinityfreeapp.com/public/api/product/edit/'+id
-    const getById = 'http://emersoncana.infinityfreeapp.com/public/api/product/'+id
+    const editUrl = 'https://emersoncana.infinityfreeapp.com/public/api/product/edit/'+id
+    const getById = 'https://emersoncana.infinityfreeapp.com/public/api/product/'+id
 
     useEffect(() => {
         console.log(getById)

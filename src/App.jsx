@@ -8,8 +8,8 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [products, setProducts] = useState([])
-  const url = 'http://emersoncana.infinityfreeapp.com/public/api/products'
-  const deleteUrl = 'http://emersoncana.infinityfreeapp.com/public/api/product/delete/'
+  const url = 'https://emersoncana.infinityfreeapp.com/public/api/products'
+  const deleteUrl = 'https://emersoncana.infinityfreeapp.com/public/api/product/delete/'
   const controller = new AbortController;
   
   useEffect(() => {

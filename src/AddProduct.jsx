@@ -15,7 +15,7 @@ const AddProduct = () => {
 
     
 
-    const addUrl = 'http://emersoncana.infinityfreeapp.com/public/api/product/add'
+    const addUrl = 'https://emersoncana.infinityfreeapp.com/public/api/product/add'
 
     const handleInput = (event) => {
         setInput(event.target.value)
